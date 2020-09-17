@@ -1,5 +1,5 @@
-- TOP Network
-  - [asdfasdfasdf](docs-en/AboutTOPNetwork/Overview.md)
+- 认识 TOP Network
+  - [TOP Network 区块链平台](docs-cn/AboutTOPNetwork/TOPNetworkPlatform.md)
   - [TOP Network 区块链平台](docs-en/AboutTOPNetwork/TOPNetworkPlatform.md)
   - [TOP Network 基础设施](docs-en/AboutTOPNetwork/TOPChainInfrastructure/Overview.md)
     - [P2P网络革新(Layer-0)](docs-en/AboutTOPNetwork/TOPChainInfrastructure/P2PNetworkInnovation(layer-0).md)

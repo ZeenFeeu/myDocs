@@ -51,18 +51,50 @@
     text-align:left;
     margin-bottom:10px;
   }
-  .content-container {
-    margin:40px 120px;
-    padding:40px 30px;
-    background:rgba(245,247,247,1);
+  .content-container .content-row {
+  	display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-moz-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
   }
-  .content-container .content-row:first-child {
-    margin-bottom: 40px;
+  .col-sm-6 {
+  	width: 48%;
+  	padding: 20px;
+  	margin-bottom: 30px;
   }
+  .col-sm-6:nth-child(2n+1) {
+  	background: linear-gradient(to left,#d3959b,#bfe6ba);
+  	background: -webkit-linear-gradient(to left,#d3959b,#bfe6ba); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(to left,#d3959b,#bfe6ba); /* Opera 11.1-12.0 */ 
+    background: -moz-linear-gradient(to left,#d3959b,#bfe6ba); /* Firefox 3.6-15 */
+    background: linear-gradient(to left,#d3959b,#bfe6ba); /* 标准语法 */
+  }
+  .col-sm-6:nth-child(2n+2) {
+  	background: linear-gradient(to right,#d3959b,#bfe6ba);
+  	background: -webkit-linear-gradient(to right,#d3959b,#bfe6ba); /* Safari 5.1-6.0 */
+    background: -o-linear-gradient(to right,#d3959b,#bfe6ba); /* Opera 11.1-12.0 */ 
+    background: -moz-linear-gradient(to right,#d3959b,#bfe6ba); /* Firefox 3.6-15 */
+    background: linear-gradient(to right,#d3959b,#bfe6ba); /* 标准语法 */
+  }
+//.content-container .content-row:first-child {
+//  margin-bottom: 40px;
+//}
   @media screen and (max-width:576px) {
      .content-container {
-        margin:40px 20px;
+    	margin:40px 0;
     }
+    .content-container .content-row {
+    	display: block;
+    }
+    .col-sm-6 {
+	  	width: 100%;
+	  	padding: 20px;
+	  	margin-bottom: 30px;
+	  }
   }
   </style>
   <body>
@@ -73,7 +105,8 @@
 <!--
   -->
   <h4>关于 TOP Network</h4>
-  <div class="content-container" style="background-color: #f4f4f4;padding: 1.2rem 1.2rem 2.4rem;margin: 2.4rem 0;">
+	<!--style="background-color: #f4f4f4;padding: 1.2rem 1.2rem 2.4rem;margin: 2.4rem 0;"-->
+  <div class="content-container">
       <div class="row content-row">
         <div class="col-sm-6 col-xs-12">
             <p class="content-title" style="border-bottom: 1px solid #979797;">认识 TOP Network</p>
@@ -204,7 +237,7 @@
   -->
 
   <h4>工具</h4>
-  <div class="content-container" style="background-color: #f4f4f4;padding: 1.2rem 1.2rem 2.4rem;margin: 2.4rem 0;">
+  <div class="content-container">
       <div class="row content-row">
         <div class="col-sm-6 col-xs-12">
             <p class="content-title" style="border-bottom: 1px solid #979797;">TOPIO 使用指南</p>
@@ -265,14 +298,12 @@
         </div>
        </div>
 
-     </div>
-</div>	
 </div>
 </div ></br></br>
 <!--
   -->
   <h4>对接指南</h4>
-  <div class="content-container" style="background-color: #f4f4f4;padding: 1.2rem 1.2rem 2.4rem;margin: 2.4rem 0;">
+  <div class="content-container">
       <div class="row content-row">
         <div class="col-sm-6 col-xs-12">
             <p class="content-title" style="border-bottom: 1px solid #979797;">钱包对接指南</p>
@@ -286,12 +317,10 @@
                       <a href="#/docs-cn/AccessGuide/WalletAccessGuide/SDKintegartion">SDK 集成</a>
                   </div>
               </div>
-			</div>
+				</div>
       </div>
         </div>
 
-       </div>
-     </div>
 </div>	  
 			
   </body>
